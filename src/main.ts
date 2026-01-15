@@ -1,4 +1,6 @@
 import './style.css'
+import coverImage from '/assets/cover.png'
+import pdfFile from '/assets/la-confessione-di-dio.pdf'
 
 // ============================================
 // LA CONFESSIONE DI DIO — Landing Page
@@ -35,10 +37,9 @@ function Hero() {
   return `
     <section class="hero">
       <div class="hero-content">
-        <!-- Cover Image -->
         <div class="cover-wrapper">
           <img 
-            src="/assets/cover.png" 
+            src="${coverImage}" 
             alt="La Confessione di Dio — Copertina" 
             class="cover-image"
           />
@@ -62,7 +63,7 @@ function Hero() {
         
         <!-- Buttons -->
         <div class="btn-group">
-          <a href="/assets/la-confessione-di-dio.pdf" download class="btn btn-primary">
+          <a href="${pdfFile}" download class="btn btn-primary">
             ${icons.download}
             Scarica il Libro
           </a>
