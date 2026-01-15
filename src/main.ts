@@ -2,13 +2,11 @@ import './style.css'
 const coverImage = import.meta.env.BASE_URL + 'assets/cover.png'
 const pdfFile = import.meta.env.BASE_URL + 'assets/la-confessione-di-dio.pdf'
 
-// ============================================
-// LA CONFESSIONE DI DIO — Landing Page
-// ============================================
+
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
-// --- SVG Icons ---
+
 
 const icons = {
   download: `<svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +29,7 @@ const icons = {
   </svg>`
 }
 
-// --- Components ---
+
 
 function Hero() {
   return `
@@ -45,14 +43,14 @@ function Hero() {
           />
         </div>
         
-        <!-- Titles -->
+
         <header>
           <h1 class="title-main">La Confessione di Dio</h1>
           <p class="title-sub">Una visione divina sull'incompletezza</p>
           <p class="author">di Alessandro Linzi</p>
         </header>
         
-        <!-- Description -->
+
         <p class="description">
           Cosa accade quando i teoremi di incompletezza di Gödel incontrano la teologia? 
           In questo saggio filosofico, Dio stesso confessa la propria natura: 
@@ -61,7 +59,7 @@ function Hero() {
           della conoscenza.
         </p>
         
-        <!-- Buttons -->
+
         <div class="btn-group">
           <a href="${pdfFile}" download class="btn btn-primary">
             ${icons.download}
@@ -158,7 +156,7 @@ function Footer() {
   `
 }
 
-// --- App ---
+
 
 function App() {
   return `
@@ -171,5 +169,5 @@ function App() {
   `
 }
 
-// Render
+
 app.innerHTML = App()

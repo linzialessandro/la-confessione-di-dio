@@ -1,53 +1,47 @@
-/* ============================================
-   LA CONFESSIONE DI DIO — Design System
-   Dark Mode + Gold + Spiritual Purple
-   ============================================ */
-
-/* CSS Custom Properties */
 :root {
-  /* Core Colors */
+
   --color-bg-deep: #0a0a0f;
   --color-bg-dark: #12121a;
   --color-bg-card: #1a1a24;
   --color-bg-elevated: #222230;
 
-  /* Gold Spectrum */
+
   --color-gold-dim: #8b7355;
   --color-gold: #c9a227;
   --color-gold-bright: #e6c74c;
   --color-gold-glow: #ffd700;
 
-  /* Spiritual Purple Spectrum */
+
   --color-purple-deep: #2d1b4e;
   --color-purple: #4a2c7a;
   --color-purple-light: #7b4bb8;
   --color-purple-glow: #a855f7;
 
-  /* Text Colors */
+
   --color-text-primary: #f0ebe3;
   --color-text-secondary: #a8a4a0;
   --color-text-muted: #6b6763;
 
-  /* Accent */
+
   --color-accent: #c9a227;
 
-  /* Gradients */
+
   --gradient-gold: linear-gradient(135deg, var(--color-gold-dim) 0%, var(--color-gold-bright) 50%, var(--color-gold) 100%);
   --gradient-purple: linear-gradient(135deg, var(--color-purple-deep) 0%, var(--color-purple) 50%, var(--color-purple-light) 100%);
   --gradient-divine: linear-gradient(135deg, var(--color-purple-deep) 0%, var(--color-bg-deep) 50%, var(--color-purple-deep) 100%);
   --gradient-text-gold: linear-gradient(90deg, var(--color-gold-dim), var(--color-gold-bright), var(--color-gold));
 
-  /* Shadows */
+
   --shadow-gold: 0 0 30px rgba(201, 162, 39, 0.3);
   --shadow-purple: 0 0 30px rgba(123, 75, 184, 0.3);
   --shadow-elevated: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 
-  /* Typography */
+
   --font-display: 'Cinzel', serif;
   --font-body: 'Cormorant Garamond', serif;
   --font-ui: 'Inter', sans-serif;
 
-  /* Spacing */
+
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
@@ -55,14 +49,14 @@
   --space-xl: 3rem;
   --space-2xl: 5rem;
 
-  /* Transitions */
+
   --transition-fast: 150ms ease;
   --transition-base: 300ms ease;
   --transition-slow: 500ms ease;
   --transition-glacial: 1000ms ease;
 }
 
-/* Reset & Base */
+
 *,
 *::before,
 *::after {
@@ -87,7 +81,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Typography */
+
 h1,
 h2,
 h3,
@@ -103,7 +97,7 @@ p {
   font-weight: 400;
 }
 
-/* Utility Classes */
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -111,9 +105,7 @@ p {
   padding: 0 var(--space-md);
 }
 
-/* ============================================
-   ANIMATIONS
-   ============================================ */
+
 
 @keyframes fadeInUp {
   from {
@@ -185,11 +177,9 @@ p {
   }
 }
 
-/* ============================================
-   LAYOUT COMPONENTS
-   ============================================ */
 
-/* Hero Section */
+
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -230,7 +220,7 @@ p {
   animation: fadeInUp 1s ease-out;
 }
 
-/* Cover Image */
+
 .cover-wrapper {
   position: relative;
   width: 100%;
@@ -264,7 +254,7 @@ p {
     var(--shadow-gold);
 }
 
-/* Titles */
+
 .title-main {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   background: var(--gradient-text-gold);
@@ -293,7 +283,7 @@ p {
   color: var(--color-text-muted);
 }
 
-/* Description */
+
 .description {
   max-width: 650px;
   font-size: 1.15rem;
@@ -301,9 +291,7 @@ p {
   line-height: 1.8;
 }
 
-/* ============================================
-   BUTTONS
-   ============================================ */
+
 
 .btn-group {
   display: flex;
@@ -338,7 +326,7 @@ p {
   transition: opacity var(--transition-base);
 }
 
-/* Primary Button — Gold */
+
 .btn-primary {
   background: var(--gradient-gold);
   color: var(--color-bg-deep);
@@ -358,16 +346,14 @@ p {
 
 
 
-/* Button Icons */
+
 .btn-icon {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
 }
 
-/* ============================================
-   SECTIONS
-   ============================================ */
+
 
 .section {
   padding: var(--space-2xl) var(--space-md);
@@ -385,9 +371,7 @@ p {
 
 
 
-/* ============================================
-   VIDEO SECTION
-   ============================================ */
+
 
 .video-section {
   padding: var(--space-2xl) var(--space-md);
@@ -434,7 +418,7 @@ p {
   border: none;
 }
 
-/* Placeholder for when no video is embedded */
+
 .video-placeholder {
   position: absolute;
   inset: 0;
@@ -454,9 +438,7 @@ p {
   opacity: 0.5;
 }
 
-/* ============================================
-   DIALOGUE SECTION
-   ============================================ */
+
 
 .dialogue-section {
   padding: var(--space-2xl) var(--space-md);
@@ -514,7 +496,7 @@ p {
   margin-right: auto;
 }
 
-/* Dialogue Button — Purple */
+
 .btn-dialogue {
   background: var(--gradient-purple);
   color: var(--color-text-primary);
@@ -547,9 +529,7 @@ p {
   }
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+
 
 .footer {
   padding: var(--space-xl) var(--space-md);
@@ -603,9 +583,7 @@ p {
   height: 18px;
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+
 
 @media (max-width: 768px) {
   .hero {
@@ -638,9 +616,7 @@ p {
   }
 }
 
-/* ============================================
-   SCROLLBAR
-   ============================================ */
+
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -659,9 +635,7 @@ p {
   background: var(--color-purple);
 }
 
-/* ============================================
-   SELECTION
-   ============================================ */
+
 
 ::selection {
   background: rgba(201, 162, 39, 0.3);
