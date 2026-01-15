@@ -455,6 +455,99 @@ p {
 }
 
 /* ============================================
+   DIALOGUE SECTION
+   ============================================ */
+
+.dialogue-section {
+  padding: var(--space-2xl) var(--space-md);
+  background: var(--color-bg-card);
+  border-top: 1px solid rgba(168, 85, 247, 0.2);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dialogue-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-purple);
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.dialogue-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 0.8s ease-out 0.3s backwards;
+}
+
+.dialogue-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  background: linear-gradient(90deg, var(--color-purple-light), var(--color-purple-glow), var(--color-purple-light));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+  margin-bottom: var(--space-md);
+}
+
+.dialogue-subtitle {
+  font-size: 1.3rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
+}
+
+.dialogue-description {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: var(--space-xl);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Dialogue Button — Purple */
+.btn-dialogue {
+  background: var(--gradient-purple);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-purple-light);
+  animation: pulse-glow-purple 3s ease-in-out infinite;
+}
+
+.btn-dialogue:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-purple),
+    0 10px 30px rgba(123, 75, 184, 0.3);
+  border-color: var(--color-purple-glow);
+}
+
+.btn-dialogue:active {
+  transform: translateY(0);
+}
+
+@keyframes pulse-glow-purple {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(123, 75, 184, 0.2),
+      0 0 40px rgba(123, 75, 184, 0.1);
+  }
+
+  50% {
+    box-shadow: 0 0 30px rgba(123, 75, 184, 0.4),
+      0 0 60px rgba(123, 75, 184, 0.2);
+  }
+}
+
+/* ============================================
    FOOTER
    ============================================ */
 
@@ -539,7 +632,8 @@ p {
   }
 
   .section,
-  .video-section {
+  .video-section,
+  .dialogue-section {
     padding: var(--space-xl) var(--space-sm);
   }
 }
