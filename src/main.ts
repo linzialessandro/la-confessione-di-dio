@@ -1,6 +1,6 @@
 import './style.css'
-import coverImage from '/assets/cover.png'
-import pdfFile from '/assets/la-confessione-di-dio.pdf'
+const coverImage = import.meta.env.BASE_URL + 'assets/cover.png'
+const pdfFile = import.meta.env.BASE_URL + 'assets/la-confessione-di-dio.pdf'
 
 // ============================================
 // LA CONFESSIONE DI DIO — Landing Page
