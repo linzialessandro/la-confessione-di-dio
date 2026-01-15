@@ -27,7 +27,7 @@ function PrivacyPage() {
             <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid rgba(255,255,255,0.1);">
               <h3 style="color: var(--color-gold-dim); margin-bottom: var(--space-sm); font-family: var(--font-display);">Licenza</h3>
               <p style="font-size: 0.95rem;">
-                Il codice sorgente di questo progetto è rilasciato sotto licenza MIT.
+                Questo progetto adotta un modello a doppia licenza: il <strong>codice sorgente</strong> del sito è Open Source sotto licenza <strong>MIT</strong>, mentre il <strong>libro "La Confessione di Dio"</strong> e le opere creative associate sono protetti da licenza <strong>Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)</strong>.
                 <br>
                 <a href="${licenseFile}" target="_blank" class="btn btn-primary" style="margin-top: var(--space-md); font-size: 0.8rem; padding: 0.5rem 1rem;">
                   Vedi File LICENSE
