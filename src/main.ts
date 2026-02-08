@@ -53,9 +53,19 @@ function Hero() {
           <p class="title-sub">Una visione divina sull'incompletezza</p>
           <p class="author">di Alessandro Linzi</p>
         </header>
-        
+      </div>
+    </section>
+  `
+}
 
-        <p class="description">
+
+function IntroSection() {
+  return `
+    <section class="section section-card">
+      <div class="container" style="text-align: center;">
+        <h2 class="dialogue-title" style="background: var(--gradient-text-gold); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 4s linear infinite; margin-bottom: var(--space-md);">Il Manoscritto</h2>
+        
+        <p class="description" style="margin: 0 auto var(--space-xl) auto;">
           Cosa accade quando i teoremi di incompletezza di Gödel incontrano la teologia? 
           In questo saggio filosofico, Dio stesso confessa la propria natura: 
           un sistema formale costruito dal linguaggio umano, incapace di dimostrare 
@@ -180,6 +190,7 @@ function App() {
   return `
     <div class="app-wrapper">
       ${Hero()}
+      ${IntroSection()}
       ${DialogueSection()}
       ${VideoSection()}
       ${Footer()}
